@@ -16,10 +16,6 @@ export class AppComponent implements OnInit {
   loadImageEditor() {
     const instance = new ImageEditor(document.querySelector('#tui-image-editor-container'), {
       includeUI: {
-          loadImage: {
-              path: 'http://localhost:4200/assets/gorgonia.jpg',
-              name: 'Gorgonia'
-          },
           theme: this.defaultTheme
           // menu: ['shape', 'crop', 'filter'],
           // initMenu: 'filter',
